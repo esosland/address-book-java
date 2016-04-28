@@ -33,4 +33,8 @@ public String getBirthMonth() {
 public static ArrayList<Contact> all() {
   return instances;
 }
+
+public static void clear() {
+    instances.clear();
+  }
 }

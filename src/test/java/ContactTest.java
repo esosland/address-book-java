@@ -38,7 +38,15 @@ public class ContactTest {
     Contact firstContact = new Contact("Elissa", "Sosland", "April");
     Contact secondContact = new Contact("Sam", "Davenport", "October");
     assertTrue(Contact.all().contains(firstContact));
-    assertTrue(Contact.all().contains(secondContact));  
+    assertTrue(Contact.all().contains(secondContact));
   }
+
+  @Test
+  public void clear_emptiesAllContactsFromArrayList_0() {
+    Contact myContact = new Contact("Elissa", "Sosland", "April");
+    Contact.clear();
+    assertEquals(Contact.all().size(), 0);
+  }
+
 
 }
