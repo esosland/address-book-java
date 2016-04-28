@@ -8,4 +8,11 @@ public class ContactTest {
     Contact myName = new Contact("Elissa");
     assertEquals(true, myName instanceof Contact);
   }
+
+  @Test
+  public void contact_instantiatesWithName_String() {
+    Contact myName = new Contact("Elissa");
+    assertEquals("Elissa", myName.getName());
+  }
+
 }
