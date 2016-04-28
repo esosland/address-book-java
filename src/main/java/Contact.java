@@ -24,4 +24,7 @@ public String getFullName() {
   return mFirstName + " " + mLastName;
 }
 
+public String getBirthMonth() {
+  return mBirthMonth;
+}
 }

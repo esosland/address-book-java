@@ -27,4 +27,10 @@ public class ContactTest {
     assertEquals("Elissa Sosland", myContact.getFullName());
   }
 
+  @Test
+  public void contact_instantiatesWithBirthMonth_String() {
+    Contact myContact = new Contact("Elissa", "Sosland", "April");
+    assertEquals("April", myContact.getBirthMonth());
+  }
+
 }
