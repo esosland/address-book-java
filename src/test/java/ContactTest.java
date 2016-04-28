@@ -33,4 +33,12 @@ public class ContactTest {
     assertEquals("April", myContact.getBirthMonth());
   }
 
+  @Test
+  public void all_returnsAllInstancesOfContact_true() {
+    Contact firstContact = new Contact("Elissa", "Sosland", "April");
+    Contact secondContact = new Contact("Sam", "Davenport", "October");
+    assertTrue(Contact.all().contains(firstContact));
+    assertTrue(Contact.all().contains(secondContact));  
+  }
+
 }
