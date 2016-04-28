@@ -1,15 +1,20 @@
 
 
 public class Contact {
-  private String mName;
+  private String mFirstName;
+  private String mLastName;
+  private String mBirthMonth;
 
 
-public Contact(String name) {
-  mName = name;
+public Contact(String firstName, String lastName, String birthMonth) {
+  mFirstName = firstName;
+  mLastName = lastName;
+  mBirthMonth = birthMonth;
 }
 
-public String getName() {
-  return mName;
+public String getFirstName() {
+  return mFirstName;
+
 }
 
 }

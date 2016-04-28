@@ -4,15 +4,15 @@ import static org.junit.Assert.*;
 public class ContactTest {
 
   @Test
-  public void name_instanstiatesCorrectly_true() {
-    Contact myName = new Contact("Elissa");
-    assertEquals(true, myName instanceof Contact);
+  public void contact_instanstiatesCorrectly_true() {
+    Contact myContact = new Contact("Elissa", "Sosland", "April");
+    assertEquals(true, myContact instanceof Contact);
   }
 
   @Test
-  public void contact_instantiatesWithName_String() {
-    Contact myName = new Contact("Elissa");
-    assertEquals("Elissa", myName.getName());
+  public void contact_instantiatesWithFirstName_String() {
+    Contact myContact = new Contact("Elissa", "Sosland", "April");
+    assertEquals("Elissa", myContact.getFirstName());
   }
 
 }
