@@ -20,4 +20,8 @@ public String getLastName() {
   return mLastName;
 }
 
+public String getFullName() {
+  return mFirstName + " " + mLastName;
+}
+
 }

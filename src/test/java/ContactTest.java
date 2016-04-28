@@ -21,4 +21,10 @@ public class ContactTest {
     assertEquals("Sosland", myContact.getLastName());
   }
 
+  @Test
+  public void contact_instantiatesWithFullName_String() {
+    Contact myContact = new Contact("Elissa", "Sosland", "April");
+    assertEquals("Elissa Sosland", myContact.getFullName());
+  }
+
 }
