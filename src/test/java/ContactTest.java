@@ -15,4 +15,10 @@ public class ContactTest {
     assertEquals("Elissa", myContact.getFirstName());
   }
 
+  @Test
+  public void contact_instantiatesWithLastName_String() {
+    Contact myContact = new Contact("Elissa", "Sosland", "April");
+    assertEquals("Sosland", myContact.getLastName());
+  }
+
 }

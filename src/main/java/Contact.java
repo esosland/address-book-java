@@ -14,7 +14,10 @@ public Contact(String firstName, String lastName, String birthMonth) {
 
 public String getFirstName() {
   return mFirstName;
+}
 
+public String getLastName() {
+  return mLastName;
 }
 
 }
