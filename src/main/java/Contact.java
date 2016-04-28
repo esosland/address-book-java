@@ -5,6 +5,7 @@ public class Contact {
   private String mLastName;
   private String mBirthMonth;
   private static ArrayList<Contact> instances = new ArrayList<Contact>();
+  private int mId;
 
 
 public Contact(String firstName, String lastName, String birthMonth) {
@@ -12,6 +13,7 @@ public Contact(String firstName, String lastName, String birthMonth) {
   mLastName = lastName;
   mBirthMonth = birthMonth;
   instances.add(this);
+  mId = instances.size();
 }
 
 public String getFirstName() {
@@ -35,6 +37,11 @@ public static ArrayList<Contact> all() {
 }
 
 public static void clear() {
-    instances.clear();
-  }
+  instances.clear();
+}
+
+public int getId() {
+  return mId;
+}
+
 }

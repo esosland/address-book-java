@@ -48,5 +48,11 @@ public class ContactTest {
     assertEquals(Contact.all().size(), 0);
   }
 
+  @Test
+  public void getId_contactsInstantiateWithAnId_Id() {
+    Contact myContact = new Contact("Elissa", "Sosland", "April");
+    assertEquals(Contact.all().size(), myContact.getId());
+  }
+
 
 }
